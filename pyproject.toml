@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sourceweave"
+version = "0.1.0"
+description = "Trace where details enter a source lineage."
+requires-python = ">=3.10"
+
+[project.scripts]
+sourceweave = "sourceweave:main"
+
+[tool.setuptools]
+py-modules = ["sourceweave"]
