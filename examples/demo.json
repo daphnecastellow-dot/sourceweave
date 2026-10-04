@@ -1,0 +1,35 @@
+{
+  "format": "sourceweave/0.1",
+  "title": "The Bell at North Reach: source lineage demo",
+  "created_at": "2026-10-04T18:30:55Z",
+  "sources": [
+    {"id":"S001","label":"Harbor master log","kind":"primary","date":"1904-11-03","url":"","note":"Fictional demonstration source."},
+    {"id":"S002","label":"North Reach Gazette","kind":"contemporary-report","date":"1904-11-05","url":"","note":"Fictional demonstration source."},
+    {"id":"S003","label":"Legends of the Outer Shoals","kind":"later-retelling","date":"1978","url":"","note":"Fictional demonstration source."},
+    {"id":"S004","label":"Modern folklore article","kind":"analysis","date":"2025-10-31","url":"","note":"Fictional demonstration source."}
+  ],
+  "details": [
+    {"id":"D001","text":"The bell rang after midnight.","note":""},
+    {"id":"D002","text":"A wet footprint was found inside the locked tower.","note":""},
+    {"id":"D003","text":"The keeper wrote that the bell rang by itself.","note":""}
+  ],
+  "relations": [
+    {"from":"S002","to":"S001","relation":"summarizes","note":""},
+    {"from":"S003","to":"S002","relation":"derived-from","note":""},
+    {"from":"S004","to":"S003","relation":"cites","note":""}
+  ],
+  "observations": [
+    {"source":"S001","detail":"D001","state":"present","note":""},
+    {"source":"S002","detail":"D001","state":"present","note":""},
+    {"source":"S003","detail":"D001","state":"present","note":""},
+    {"source":"S004","detail":"D001","state":"present","note":""},
+    {"source":"S001","detail":"D002","state":"absent","note":""},
+    {"source":"S002","detail":"D002","state":"absent","note":""},
+    {"source":"S003","detail":"D002","state":"present","note":"This detail first appears in the 1978 retelling within the demo set."},
+    {"source":"S004","detail":"D002","state":"present","note":""},
+    {"source":"S001","detail":"D003","state":"absent","note":""},
+    {"source":"S002","detail":"D003","state":"unclear","note":""},
+    {"source":"S003","detail":"D003","state":"present","note":""},
+    {"source":"S004","detail":"D003","state":"present","note":""}
+  ]
+}
